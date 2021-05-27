@@ -85,17 +85,17 @@ for(var i=0;i<closeAd.length;i++){
 
 
 
-function myclick(evt,myad){
-	//alert("hello");
-	var ad = document.getElementsByClassName('mainad');
-	for(var i =0;i<ad.length;i++){
-		ad[i].style.opacity = "0";
-		//document.getElementById(myad).style.opacity = "1";
-	}
-	document.getElementById(myad).style.opacity = "1";
+// function myclick(evt,myad){
+	// //alert("hello");
+	// var ad = document.getElementsByClassName('mainad');
+	// for(var i =0;i<ad.length;i++){
+		// ad[i].style.opacity = "0";
+		// //document.getElementById(myad).style.opacity = "1";
+	// }
+	// document.getElementById(myad).style.opacity = "1";
 	
-	cmplteAd();
-}
+	// cmplteAd();
+// }
 
 function hs(){
 	var mainad = document.getElementsByClassName('mainad');
