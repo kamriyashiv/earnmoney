@@ -43,7 +43,7 @@ function myLog(){
 
 function mypointsAccess(){
    acpoints.value=points.innerHTML;
-   console.log(acpoints.value);
+   //console.log(acpoints.value);
 }
 
 
@@ -61,7 +61,7 @@ function mypointsAccess(){
 				
 			}
 		}
-	},5000);
+	},60000);
    }
   
   
