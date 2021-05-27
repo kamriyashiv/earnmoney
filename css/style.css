@@ -280,8 +280,7 @@
 			font-size: 22px;
 		}
 		#task{
-			height: 100%;
-			position: fixed;
+			
 			top: 0;
 			width: 100%;
 			background: rgb(254 207 43);
@@ -319,7 +318,6 @@
 			box-shadow: 0px 26px 182px 0px #24406514;
 		}
 		.mainad{
-			opacity:0;
 			
 			padding: 0px;
 			height: 100%;
