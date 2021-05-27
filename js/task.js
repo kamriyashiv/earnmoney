@@ -23,17 +23,7 @@ task.innerHTML+=`
 						       <h3>Task 1</h3>
 						  </div>
 						 <div class="mainad" id="first">
-						 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-								<!-- banner-horigental-add -->
-								<ins class="adsbygoogle"
-								     style="display:block"
-								     data-ad-client="ca-pub-4950553080318054"
-								     data-ad-slot="4349203076"
-								     data-ad-format="auto"
-								     data-full-width-responsive="true"></ins>
-								<script>
-								     (adsbygoogle = window.adsbygoogle || []).push({});
-								</script>
+						 	
                         			 </div>
 					</div>
 					
@@ -55,6 +45,19 @@ task.innerHTML+=`
 						  <div class="mainad" id="forth">
 						     <h2>First Ad</h2>
 							  <p>Click this ad and Wait for 45 sec.</p>
+							  <div>
+							  	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+								<!-- banner-horigental-add -->
+								<ins class="adsbygoogle"
+								     style="display:block"
+								     data-ad-client="ca-pub-4950553080318054"
+								     data-ad-slot="4349203076"
+								     data-ad-format="auto"
+								     data-full-width-responsive="true"></ins>
+								<script>
+								     (adsbygoogle = window.adsbygoogle || []).push({});
+								</script>
+							  </div>
 						 </div>
 					</div>
 					
