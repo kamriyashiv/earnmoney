@@ -43,7 +43,7 @@ function myLog(){
 
 function mypointsAccess(){
    acpoints.value=points.innerHTML;
-   //console.log(acpoints.value);
+   console.log(acpoints.value);
 }
 
 
@@ -61,7 +61,7 @@ function mypointsAccess(){
 				
 			}
 		}
-	},60000);
+	},5000);
    }
   
   
@@ -85,33 +85,15 @@ for(var i=0;i<closeAd.length;i++){
 
 
 
-// function myclick(evt,myad){
-	// //alert("hello");
-	// var ad = document.getElementsByClassName('mainad');
-	// for(var i =0;i<ad.length;i++){
-		// ad[i].style.opacity = "0";
-		// //document.getElementById(myad).style.opacity = "1";
-	// }
-	// document.getElementById(myad).style.opacity = "1";
-	
-	// cmplteAd();
-// }
-
-function hs(){
-	var mainad = document.getElementsByClassName('mainad');
-    for(var i = 0;i < mainad.length; i++){
-	    if(mainad[i].style.opacity == "1"){
-			document.getElementById('task').style.zIndex = "-1";
-			mainad[i].style.zIndex  = "999";
-			
-		}
-		else{
-			document.getElementById('task').style.zIndex = "1";
-		}
+function myclick(evt,myad){
+	//alert("hello");
+	var ad = document.getElementsByClassName('mainad');
+	for(var i =0;i<ad.length;i++){
+		ad[i].style.display = "none";
 	}
+	document.getElementById(myad).style.display = "block";
+	cmplteAd();
 }
-hs()
-
 
 myclose.addEventListener('click',function(){
 	document.querySelector('.guidtool').style.display = "none";
@@ -139,3 +121,9 @@ function mypage(evt,cp){
 	 }
 	 document.getElementById(cp).style.display="block";
 }
+
+
+
+
+
+
