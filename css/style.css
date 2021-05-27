@@ -696,8 +696,8 @@
 			box-shadow: 0px 26px 182px 0px #24406514;
 		}
 		.mainad{
-			
-			padding: 10px;
+			display:none;
+			padding: 0px;
 			height: 100%;
 			position: fixed;
 			top: 0;
@@ -706,6 +706,7 @@
 			left: 0;
 			display: none;
 			width: 100%;
+			overflow:scroll;
 		}
 		.celebration{
 			position: fixed;
