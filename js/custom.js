@@ -89,11 +89,29 @@ function myclick(evt,myad){
 	//alert("hello");
 	var ad = document.getElementsByClassName('mainad');
 	for(var i =0;i<ad.length;i++){
-		ad[i].style.display = "none";
+		ad[i].style.opacity = "0";
+		//document.getElementById(myad).style.opacity = "1";
 	}
-	document.getElementById(myad).style.display = "block";
+	document.getElementById(myad).style.opacity = "1";
+	
 	cmplteAd();
 }
+
+function hs(){
+	var mainad = document.getElementsByClassName('mainad');
+    for(var i = 0;i < mainad.length; i++){
+	    if(mainad[i].style.opacity == "1"){
+			document.getElementById('task').style.zIndex = "-1";
+			mainad[i].style.zIndex  = "999";
+			
+		}
+		else{
+			document.getElementById('task').style.zIndex = "1";
+		}
+	}
+}
+hs()
+
 
 myclose.addEventListener('click',function(){
 	document.querySelector('.guidtool').style.display = "none";
@@ -121,9 +139,3 @@ function mypage(evt,cp){
 	 }
 	 document.getElementById(cp).style.display="block";
 }
-
-
-
-
-
-
