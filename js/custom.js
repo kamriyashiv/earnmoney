@@ -34,7 +34,7 @@ MyPoints();
 
 
 function myLog(){
-	if(points.innerHTML === "3"){
+	if(points.innerHTML === "10"){
 		  claim.style.display = "block";
 	}else{
 		  console.log("noe");
@@ -61,7 +61,7 @@ function mypointsAccess(){
 				
 			}
 		}
-	},50000);
+	},45000);
    }
   
   
@@ -78,7 +78,7 @@ for(var i=0;i<closeAd.length;i++){
 	closeAd[i].addEventListener('click',function(){
 		setTimeout(()=>{
 			this.style.display = "none";
-		},5000);
+		},50000);
 			
 	})
 }
