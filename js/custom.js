@@ -61,7 +61,7 @@ function mypointsAccess(){
 				
 			}
 		}
-	},5000);
+	},50000);
    }
   
   
