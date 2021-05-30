@@ -782,4 +782,8 @@
 		border-radius: 100px;
 		left: 10px;
 		}
+		iframe{
+			height:80%;
+			width:100%;
+		}
 }
