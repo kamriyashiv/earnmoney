@@ -1,26 +1,42 @@
 alert("Please Do Not Refresh The Page");
+//ADD EVENT LISTENERE FOR LOAD MY PROMPT POPUP
 window.addEventListener('load',function(){
+	//SET TIMEOUT FOR PROMPT
 	setTimeout(function(){
+		//ACCESS ADD TO CLASS IN SECTION OF PROMPT
 		document.querySelector('.add-to').style.display ="block";
 		console.log("hello");
-	},3000);
+	},3000);//DURATION FOR 3 SECOND
+	
+	//ACCESS MAYBELATER BUTTON IN PROPMPT AND SET ACTION 
 	document.querySelector('.later').addEventListener('click',function(){
+	//SET ACTION
 	document.querySelector('.add-to').style.display ="none";
 	})
     
 })
+
+//CODE FOR CLAIM BUTTON FOR OPEN MY LOG IN FORM
+//ADD CLICK EVENT LISTENERE FOR OPEN MY LOGIN FORM
 claim.addEventListener('click',function(){
+	//ACCESS LOGIN FORM AND SET ONCLICK ACTION DISPLAY NONE
 	document.getElementById('LoginForm').style.display = "block";
 })
 
-
+//FUNCTION FOR ADD POINT IN PER AD CLICK 
 function MyPoints(){
+	//CREARE A VARAIBLE FOR DEFAULT POINTS
 	var a = 1;
+	   //ACCESS AD CLASS IN TASK SECTION 
 		var ad = document.getElementsByClassName('ad');
+		//ACCESS ALL AD CLASSESS
 		for(var i=0; i< ad.length;i++){
+			//SET CLICK EVENT IN ALL AD CLASS 
 		    ad[i].addEventListener('click',function(){
-			   //console.log(a++);
+			   //ACCESS POINTS ID FROM PROFILE PAGE AND PLUS (0 + 1) IN PER CLICK
 			   document.getElementById('points').innerHTML=a++;
+			   
+			   //CALL MY MY LOG FUNCTION HERE 
 			   myLog();
 			   mypointsAccess();
 			})
@@ -28,25 +44,33 @@ function MyPoints(){
 	//console.log(LoginForm);
 
 }
-MyPoints();
+MyPoints();//END MY POINT AD FUNCTION
 
 
 
-
+//FUNCTION FOR VALIDATE MY POINTS FOR WITHDRAWAL 
 function myLog(){
+	//ACCESS POINTS INNER TEXT FROM PROFILE PAGE 
 	if(points.innerHTML === "10"){
+		  //SET STYLE IN CLAIM BUTTON FOR BLOCK 
 		  claim.style.display = "block";
 	}else{
-		  console.log("noe");
+		  console.log("not to able for claim");
 	}
-}
+}//CALL THIS FUNCTION IN UNDER MyPoints FUNCTION
+
+
+//SET STYLE TO ONCLICK IN CLAIM BUTTON IS DISPLAY NONE 
+claim.addEventListener('click',function(){
+	claim.style.display = "none";
+})
+
+
 
 function mypointsAccess(){
    acpoints.value=points.innerHTML;
    console.log(acpoints.value);
 }
-
-
    function cmplteAd(){
 	    setTimeout(function(){
 		 
